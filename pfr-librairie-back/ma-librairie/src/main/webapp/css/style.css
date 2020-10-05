@@ -1,0 +1,66 @@
+
+@media all and (max-width:780px){
+	
+
+
+
+body{
+	background-color: white;
+	color: black;
+	background-image:url(images/bibliotheque.jpg)
+	no-repeat center fixed;
+
+}
+
+
+fieldset{
+	background-color: white;
+	color: black;
+	display:none;
+	float:none;
+	
+}
+
+.image{
+	
+	border: 3px white;
+	float:none;
+	display:none;
+	width:30%;
+	margin-left:0%;
+}
+
+.form-inline my-2 my-lg-0{
+	color: black;
+}
+
+.container-fluid{
+	
+	float:none;
+	display:none;
+	width:30%;
+	margin-left:5%;
+	
+}
+
+#imagefond{
+	
+	float:none;
+	display:none;
+	width:30%;
+	margin-left:5%;
+	
+}
+
+#bas{
+	
+	float:none;
+	display:none;
+	width:30%;
+	margin-left:5%;
+}
+
+}
+
+
+	

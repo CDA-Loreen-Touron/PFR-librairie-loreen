@@ -1,0 +1,32 @@
+logging:
+  file:
+    name: ${user.home}/librairie/app-librairie.log
+  level:
+    com:
+      pfr: trace
+    root: info
+    com.pfr: debug
+    
+spring:
+  datasource:
+    url: jdbc:mariadb://localhost:3306/db_librairie
+    username: cdalibrairie
+    password: pwd
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+# configuration spring-mvc
+
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+server:
+  port : 8080
+  
+#spring.mvc.view.prefix=/WEB-INF/jsp/
+#spring.mvc.view.suffix=.jsp
+  
+      
