@@ -1,8 +1,6 @@
 
 package com.pfr.librairie.controller;
 
-import java.util.ArrayList;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -28,8 +26,7 @@ public class ClientController {
 
     @RequestMapping( value = { "/", "/accueil" }, method = RequestMethod.GET )
     public String accueil( Model model ) {
-        String message = "Hello Spring Boot + JSP";
-        model.addAttribute( "message", message );
+
         return "accueil";
     }
 
@@ -115,14 +112,26 @@ public class ClientController {
 
     }
 
-    @GetMapping( value = "/listeClient" )
-    public ModelAndView afficherTous() {
-        ArrayList<ClientEntity> clients = (ArrayList<ClientEntity>) clientService.findAll();
-        ModelAndView mv = new ModelAndView();
-        mv.setViewName( "listeClients" );// nvelle page jsp à créer
-        mv.addObject( "clients", clients );
-        return mv;
+    @GetMapping( value = "/connexion" )
+    public String connexion() {
+        return "connexion";
     }
+
+    @GetMapping( value = "/chercherLivre" )
+    public String chercherLivre() {
+        return "chercherLivre";
+    }
+
+    // @GetMapping( value = "/listeClient" )
+    // public ModelAndView afficherTous() {
+    // ArrayList<ClientEntity> clients = (ArrayList<ClientEntity>)
+    // clientService.findAll();
+    // ModelAndView mv = new ModelAndView();
+    // mv.setViewName( "listeClients" );// nvelle page jsp à créer
+    // mv.addObject( "clients", clients );
+    // return mv;
+    // }
+
 }
 
 // @Slf4j

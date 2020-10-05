@@ -8,7 +8,6 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
 
 import com.pfr.librairie.entity.ClientEntity;
-import com.pfr.librairie.entity.ClientEntity.ClientEntityBuilder;
 
 @Repository
 public interface IDaoClient extends PagingAndSortingRepository<ClientEntity, String> {
@@ -19,6 +18,6 @@ public interface IDaoClient extends PagingAndSortingRepository<ClientEntity, Str
 
     Optional<ClientEntity> deleteByEmail( String email );
 
-    void save( ClientEntityBuilder email );
+    void save( String email );
 
 }

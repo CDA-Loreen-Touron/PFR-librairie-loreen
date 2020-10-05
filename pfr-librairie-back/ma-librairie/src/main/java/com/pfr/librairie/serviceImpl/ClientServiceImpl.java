@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.pfr.librairie.dao.IDaoClient;
-import com.pfr.librairie.dto.ClientDto;
 import com.pfr.librairie.entity.ClientEntity;
 import com.pfr.librairie.service.IServiceClient;
 
@@ -87,7 +86,7 @@ public class ClientServiceImpl implements IServiceClient {
 
     @Override
     public void save( ClientEntity c1 ) {
-        // TODO Auto-generated method stub
+        this.clientDao.save( c1 );
 
     }
 
@@ -97,10 +96,28 @@ public class ClientServiceImpl implements IServiceClient {
         return null;
     }
 
-    @Override
-    public void create( ClientDto client ) {
-        // TODO Auto-generated method stub
+    // @Override
+    // public void create( ClientDto client ) {
+    // // TODO Auto-generated method stub
+    //
+    // }
+    //
+    // @Override
+    // public void create( ClientEntity clientEntity ) {
+    // // TODO Auto-generated method stub
+    //
+    // }
 
-    }
+    // @Override
+    // public void create( ClientREntoi client ) {
+    // // TODO Auto-generated method stub
+    //
+    // }
+    //
+    // @Override
+    // public ClientEntity create( ClientEntity client ) {
+    // // TODO Auto-generated method stub
+    // return null;
+    // }
 
 }

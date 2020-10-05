@@ -10,7 +10,7 @@
 
 <title>Rechercher un livre</title>
 
-<link href="<c:url value="/css/style.css" />" rel="stylesheet">
+<link href="/css/style.css" />
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
 </head>
@@ -18,14 +18,11 @@
 <body>
 
 <div class="form-row">
-  <form action="chercherLivre" method="post"></br>
-  
-    <div class="form-group col-md-6">
-      <label for="inputEmail4">Email</label>
-      <input type="email" required="required" class="form-control" id="inputEmail4" name="email">
+  <p>Page en construction</p></br>
+  <p>/Liste des livres</p>
     </div>
     
-  </form>
+ 
 
 
 

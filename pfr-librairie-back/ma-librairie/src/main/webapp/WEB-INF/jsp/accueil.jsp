@@ -8,7 +8,7 @@
 
 <meta charset="UTF-8">
 <title>Accueil</title>
-<link href="<c:url value="/css/style.css" />" rel="stylesheet">
+<link href="/css/style.css" />
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 <body>
@@ -31,8 +31,8 @@
 								aria-expanded="false"> Mon Compte </a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 								
-									<a class="dropdown-item" id="inscription" href="#">Je crée mon compte</a> 
-									<a class="dropdown-item" id="connexion" href="#">Je me connecte</a>
+									<a class="dropdown-item" id="formulaireClient" href="formulaireClient">Je crée mon compte</a> 
+									<a class="dropdown-item" id="connexion" href="connexion">Je me connecte</a>
 									
 								</div>
 							</li>
@@ -43,8 +43,11 @@
 			
 			<div class="col-12 col-md-6">
 			<form class="form-inline my-2 my-lg-0">
-				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Je cherche mon livre</button>
+				<input class="form-control mr-sm-2" type="search" required="required" placeholder="Search" aria-label="Search">
+				
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a class="dropdown-item" id="chercherLivre" href="chercherLivre">
+				Je cherche mon livre</a></button>
+				
 			</form>
 			</div>
 						

@@ -5,7 +5,6 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.pfr.librairie.dto.ClientDto;
 import com.pfr.librairie.entity.ClientEntity;
 
 @Service
@@ -29,8 +28,10 @@ public interface IServiceClient {
 
     void save( ClientEntity c1 );
 
-    ArrayList findAll();
+    ArrayList<ClientEntity> findAll();
 
-    void create( ClientDto client );
+    // void create( ClientDto client );
+    //
+    // void create( ClientEntity clientEntity );
 
 }

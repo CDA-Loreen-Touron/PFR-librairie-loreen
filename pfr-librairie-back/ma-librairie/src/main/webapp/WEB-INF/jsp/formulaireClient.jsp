@@ -3,15 +3,18 @@ UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
+
 <head>
 <meta charset="UTF-8">
 <title>Formulaire d'inscription client</title>
-<link href="<c:url value="/css/style.css" />" rel="stylesheet">
+<link href="/css/style.css" />
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
 	integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
 	crossorigin="anonymous">
 </head>
+
+
 
 <body>
 	<img src="images/logo.png"
@@ -23,7 +26,7 @@ UTF-8"
 		<div class="form-row">
 			<form action="formulaireClient" method="post">
 				</br>
-
+<div class="row">
 				<div class="form-group">
 					<label for="inputEmail4">Email</label> <input type="email"
 						required="required" class="form-control" id="inputEmail4"
@@ -35,13 +38,14 @@ UTF-8"
 						required="required" class="form-control" id="inputPassword4"
 						name="pwd">
 				</div>
+				</div>
 
 				<div class="form-group">
 					<label for="inputConfirmation">Confirmation</label> <input
 						type="password" required="required" class="form-control"
 						id="inputConfirmation" name="confirmation">
-				</div>
-
+				</div></br>
+<div class="row">
 				<div class="form-group">
 					<label for="inputPrenom">Prénom</label> <input type="text"
 						required="required" class="form-control" id="inputPrenom"
@@ -52,7 +56,7 @@ UTF-8"
 					<label for="inputNom">Nom</label> <input type="text"
 						required="required" class="form-control" id="inputNom" name="nom">
 				</div>
-
+</div></br>
 
 				<div class="form-group">
 					<label for="inputTel">Téléphone</label> <input type="text"
@@ -60,7 +64,7 @@ UTF-8"
 						name="telephone">
 				</div>
 
-				<button type="submit" class="btn btn-primary">Sign in</button>
+				<button type="submit" class="btn btn-primary" >Créer son compte</button>
 			</form>
 		</div>
 	</fieldset>
